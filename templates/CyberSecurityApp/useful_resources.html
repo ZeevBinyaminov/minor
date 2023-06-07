@@ -1,0 +1,66 @@
+{% extends "CyberSecurityApp/layout.html" %}
+{% block content %}
+    <div class="container">
+        <h1 class="text-primary"> {{ title }} </h1>
+        <p class="lead text-secondary">
+            Information security is a rapidly growing field and there are numerous resources available to help
+            individuals stay
+            up to date on the latest developments. This article provides an overview of some of the most useful
+            resources for
+            information security professionals.
+        </p>
+        <p class="text-secondary">
+
+            1. Security blogs: Security blogs are a great way to stay up to date on the latest news and trends in
+            information
+            security. Popular security blogs include:
+        <ul>
+            <li><a href="https://securityledger.com/" target="_blank">The Security Ledger</a></li>
+            <li><a href="https://www.schneier.com/" target="_blank">Schneier on Security</a></li>
+            <li><a href="https://nakedsecurity.sophos.com/" target="_blank">Naked Security</a></li>
+        </ul>
+        </p>
+        <p class="text-secondary">
+
+            2. Online forums: Online forums are a great way to connect with other security professionals and ask
+            questions about
+            specific topics. Popular forums include Reddit’s Information Security sub-Reddit and Stack Exchange’s
+            Information
+            Security site.
+        </p>
+        <p class="text-secondary">
+
+            3. Online courses: There are numerous online courses available that can help individuals build their
+            knowledge of
+            information security topics such as cryptography, network security, application security, web application
+            security,
+            and more. Popular online courses include Coursera’s Introduction to Computer Security course and <a
+                target="_self" href="https://www.udemy.com/course/cybersecurity-fundamentals/">Udemy’s
+            Cybersecurity Fundamentals course</a>.
+        </p>
+        <p class="text-secondary">
+
+            4. Books: Books are a great way to dive deeper into specific topics in information security such as
+            cryptography or
+            malware analysis. Popular books include Applied Cryptography by Bruce Schneier, The Art of Memory Forensics
+            by
+            Michael Hale Ligh, and The Web Application Hacker’s Handbook by Dafydd Stuttard & Marcus Pinto.
+        </p>
+        <p class="text-secondary">
+
+            5. Conferences: Conferences are a great way to network with other information security professionals and
+            learn about
+            the latest developments in the field from leading experts in the industry. Popular conferences include Black
+            Hat
+            USA, DEFCON, RSA Conference, OWASP AppSec USA, ISC2 Congress, etc..
+        </p>
+        <p class="text-secondary">
+
+            By utilizing these resources regularly, individuals can stay up to date on the latest developments in
+            information
+            security and become more knowledgeable about this important field of study.
+        </p>
+        {% load static %}
+        <a href="https://roadmap.sh/cyber-security"><img src="{% static 'images/roadmap.png' %}" height="500px"></a>
+    </div>
+{% endblock %}
