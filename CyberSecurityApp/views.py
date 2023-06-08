@@ -7,20 +7,20 @@ def say_hello(request):
 
 
 def main_page(request):
-    return render(request, "CyberSecurityApp/main.html", {"title": "Основная страница",
-                                                          "text": "Текст основной страницы"})
+    return render(request, "CyberSecurityApp/main.html", {"title": "Main page"})
 
 
 def applications(request):
-    return render(request, "CyberSecurityApp/applications.html", {"title": "Приложения",
-                                                                  "text": "Приложения для пентестинга"})
+    return render(request, "CyberSecurityApp/applications.html", {"title": "Applications"})
 
 
 def tips_and_tricks(request):
-    return render(request, "CyberSecurityApp/tips_and_tricks.html", {"title": "Посказки и приемы",
-                                                                     "text": "Про подсказки и приемы"})
+    return render(request, "CyberSecurityApp/tips_and_tricks.html", {"title": "Tips and tricks"})
 
 
-def useful_resources(request):
-    return render(request, "CyberSecurityApp/useful_resources.html", {"title": "Полезные источники",
-                                                                    "text": "Про полезные источники"})
+def useful_sources(request):
+    return render(request, "CyberSecurityApp/useful_sources.html", {"title": "Useful sources"})
+
+
+def form(request):
+    return render(request, "CyberSecurityApp/forms.html", {"title": "Form"})

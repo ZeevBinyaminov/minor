@@ -20,6 +20,7 @@ urlpatterns = [
     path("", views.say_hello),
     path("main/", views.main_page, name="main"),
     path("tips_and_tricks", views.tips_and_tricks, name="tips and tricks"),
-    path("useful_sources", views.useful_resources, name="useful resources"),
-    path("applications", views.applications, name="applications")
+    path("useful_sources", views.useful_sources, name="useful sources"),
+    path("applications", views.applications, name="applications"),
+    path("form", views.form, name="form"),
 ]
