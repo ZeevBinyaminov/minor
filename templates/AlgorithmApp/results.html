@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<br>
+
+<table aling="center" border=1 cellpadding="10" cellspacing="0">
+	<tr>
+	    <th>
+		Введённое число
+		</th>
+        <th>
+		Позиция
+		</th>
+        <th>
+		Локация
+		</th>
+	</tr>
+
+	{% for obj in results %}
+	<tr>
+        <td>
+            {{ obj.number }}
+        </td>
+		<td>
+			{{ obj.side }}
+		</td>
+		<td>
+			{{ obj.location }}
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+<br>
+<p>
+	Статистика по верхним местам: <br>
+	Количество {{ results.count }} чисел <br>
+	Самое большое значение места {{ stats.number__max }} <br>
+	Самое маленькое значение места {{ stats.number__min }} <br>
+	Среднее арифметическое {{ stats.number__avg }}
+</p>
+</body>
+</html>

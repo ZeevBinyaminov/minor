@@ -2,10 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def say_hello(request):
-    return HttpResponse("Hello")
-
-
 def main_page(request):
     return render(request, "CyberSecurityApp/main.html", {"title": "Main page", "one": "disabled"})
 
@@ -24,3 +20,4 @@ def applications(request):
 
 def form(request):
     return render(request, "CyberSecurityApp/forms.html", {"title": "Form", "five": "disabled"})
+

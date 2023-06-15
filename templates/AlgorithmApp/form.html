@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>1005. Дано. Номер места в плацкартном вагоне. Определить, какое это место: верхнее или нижнее, в купе или боковое.</h3>
+
+<form method="post" action="{% url "get place" %}">
+    {% csrf_token %}
+    {{ form }}
+
+    <button>Отправить</button>
+
+</form>
+
+</body>
+</html>

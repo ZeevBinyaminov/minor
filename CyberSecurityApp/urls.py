@@ -16,9 +16,9 @@ Including another URLconf
 
 from django.urls import path
 from . import views
+
 urlpatterns = [
-    path("", views.say_hello),
-    path("main/", views.main_page, name="main"),
+    path("main", views.main_page, name="main"),
     path("tips_and_tricks", views.tips_and_tricks, name="tips and tricks"),
     path("useful_sources", views.useful_sources, name="useful sources"),
     path("applications", views.applications, name="applications"),
