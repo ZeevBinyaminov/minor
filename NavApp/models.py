@@ -6,7 +6,7 @@ class Site(models.Model):
     site_nav = models.CharField(verbose_name='Название ссылки', max_length=255, default="Название ссылки")
     site_nav_position = models.IntegerField(verbose_name='Приоритет в навигации (0 - исключить)', default=0, )
     site_content = models.TextField(verbose_name='Основное содержание страницы',
-                                    default='', blank=True)
+                                    default='0', blank=True)
 
     class Meta:
         verbose_name = 'Контент текущей страницы'
