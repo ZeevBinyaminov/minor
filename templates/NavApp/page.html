@@ -1,0 +1,24 @@
+{% extends 'NavApp/layout.html' %}
+
+{% block content %}
+{% load static %}
+    <nav id="navigation">
+        <ul class="nav">
+
+            {% for object in nav_objects %}
+                <li class="nav-item">
+                    <a class="nav-link {% if pk == object.id %}disabled{% else %}{% endif %}"
+                       href="{% url 'page' pk=object.id %}">
+                        {{ object.site_nav }}
+                    </a>
+                </li>
+            {% endfor %}
+            <br>
+        </ul>
+    </nav>
+    <div class="container">
+     <h1 class="text-primary">{% autoescape off %}{{ content_object.site_title }}{% endautoescape %}</h1>
+        {% autoescape off %}{{ content_object.site_content }}{% endautoescape %}
+    </div>
+
+{% endblock %}

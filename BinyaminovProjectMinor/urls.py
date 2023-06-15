@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('CyberSecurityApp.urls')),
     path('algo/', include('AlgorithmApp.urls')),
-    path('navapp', include('NavApp.urls')),
+    path('navapp/', include('NavApp.urls')),
 ]
