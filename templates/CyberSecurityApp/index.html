@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/blocks.css' %}">
+    <script src="{% static 'js/function.js' %}"></script>
+    <title>DOM, JS. Считываем информацию из DOM</title>
+</head>
+
+<body>
+    <div class="block1"> ГУ МВД РОССИИ ПО <br> Г. Санкт-Петербургу и Ленинградской области </div>
+    <div class="block2"> 29.12.2018</div>
+    <div class="block3"> 780-064</div>
+    <div class="block4" id="surname"> Марсал </div>
+    <div class="block5" id="name"> Александра </div>
+    <div class="block6" id="patr"> Денисовна </div>
+    <div class="block7"> жен. </div>
+    <div class="block8"> 19.11.2004 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+    <div class="block9"> гор. Санкт-Петербург </div>
+    <div class="photo"> <img src="{% static 'images/мелисса.jpg' %}" height="120" width="100" /> </div>
+    </p>
+    <br>
+    <button onclick="changeContent()" id="button">Изменить содержание</button>
+
+</body>
+
+
+</html>

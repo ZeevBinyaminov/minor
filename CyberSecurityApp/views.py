@@ -24,3 +24,7 @@ def applications(request):
 
 def form(request):
     return render(request, "CyberSecurityApp/forms.html", {"title": "Form", "five": "disabled"})
+
+
+def pasport(request):
+    return render(request, "CyberSecurityApp/index.html")

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <h3>1012. Даны вещественные числа: A, B, C. Определить, выполняются ли неравенства A < B < C или A> B > C и какое
+            именно неравенство выполняется.</h3>
+
+    <form method="post" action="{% url 'eq' %}">
+        {% csrf_token %}
+        {{ form }}
+
+        <button>Отправить</button>
+
+    </form>
+
+</body>
+
+</html>
